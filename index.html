@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Architecture Website" content="Best Architecture In World">
+    <meta keys="Iconic || Idea || Issue">
+    <script src="https://kit.fontawesome.com/707ca0a07c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <title>Architecture</title>
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+#main-footer {
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #c5a47e;
+    min-width: 40px;
+    text-align: center;
+}
+
+.contact-item p {
+    margin: 0 0 5px 0;
+    color: #c5a47e;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #c5a47e;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #4a4a4a;
+    font-size: 14px;
+}
+
+.design-credit {
+    margin-top: 15px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* Font Awesome icons (you can host this locally) */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url("path-to-font-awesome");
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    color: #c5a47e;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+}
+
+.service-card hr {
+    border: 1px solid #eee;
+    margin: 1rem 0;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: #c5a47e;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #a88d6d;
+    transform: scale(1.1);
+}
+    </style>
+</head>
+
+<body>
+    <!-- Showcase -->
+    <header id="showcase">
+        <div class="container">
+            <nav id="navbar">
+                <h3 class="logo">ICONIC INTERIORS</h3>
+                <ul>
+                    <li><a href="index.html" style="cursor: pointer;">Home</a></li>
+                    <li><a href="#home-a">Projects</a></li>
+                    <li><a  href="#home-b">About Us</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="#main-footer">Contact Us</a></li> 
+                </ul>
+            </nav>
+            <div class="show-content">
+                <h3 >Learn, Design, Create—Start your Interior Design Journey
+                    with us!</h3>
+                <a href="#home-a" class="btn btn-light">Offerings</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section id="home-a">
+        <h1 class="text-center py-1">Our Offerings</h1>
+     
+        <div class="container process-container">
+            <div>
+                <i class='fas fa-brain fa-2x'></i>
+                <h3>Interior Design Courses</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                    asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                    autem?</p>
+            </div>
+            <div>
+                <i class='fas fa-brain fa-2x'></i>
+                <h3>Workshops</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                    asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                    autem?</p>
+            </div>
+            <div>
+                <i class='fas fa-drafting-compass fa-2x'></i>
+                <h3>Online Consultancy</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                    asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                    autem?</p>
+            </div>
+            <div>
+                <i class="fa fa-mobile-phone fa-2x"></i>
+                <h3>E-books</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                    asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                    autem?</p>
+            </div>
+            <div>
+                <i class="fa fa-mobile-phone fa-2x"></i>
+                <h3>Design Services</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                    asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                    autem?</p>
+            </div>
+        </div>
+    
+    </section> -->
+
+    <section id="home-a">
+        <h1 class="text-center py-1">Our Offerings</h1>
+        
+        <div class="container process-container">
+            <!-- Interior Design Courses Card -->
+            <div class="service-card">
+                <i class='fas fa-graduation-cap fa-2x'></i>
+                <h3>Interior Design Courses</h3>
+                <hr>
+                <p>Structured, industry-focused programs for all levels:<br>
+                - Fundamental (Beginners)<br>
+                - Intermediate (Freelancers)<br>
+                - Advanced (Professionals)<br>
+                12-15 Weeks Duration | Live & Recorded Sessions</p>
+                <!-- <button class="cta-btn">→</button> -->
+            </div>
+    
+            <!-- Workshops Card -->
+            <div class="service-card">
+                <i class='fas fa-tools fa-2x'></i>
+                <h3>Workshops</h3>
+                <hr>
+                <p>Practical sessions on:<br>
+                - Material & Finishes<br>
+                - Vaastu Alignment<br>
+                - AutoCAD & 3D Visualization<br>
+                - Modular Kitchen Design<br>
+                - Lighting & Ambience Creation</p>
+                <!-- <button class="cta-btn">→</button> -->
+            </div>
+    
+            <!-- Online Consultancy Card -->
+            <div class="service-card">
+                <i class='fas fa-laptop-house fa-2x'></i>
+                <h3>Online Consultancy</h3>
+                <hr>
+                <p>Expert guidance packages:<br>
+                - Essential (30 mins @ ₹499)<br>
+                - Comprehensive (1 hr @ ₹999)<br>
+                - Vaastu Balancing (₹2100)<br>
+                - Full Planning Support<br>
+                - Budget Makeovers</p>
+                <!-- <button class="cta-btn">→</button> -->
+            </div>
+    
+            <!-- E-books Card -->
+            <div class="service-card">
+                <i class="fas fa-book-open fa-2x"></i>
+                <h3>E-books</h3>
+                <hr>
+                <p>In-depth resources covering:<br>
+                - Fundamentals of Interior Design<br>
+                - Material Mastery<br>
+                - Practical Vaastu Guide<br>
+                - Lighting Techniques<br>
+                - Space Optimization<br>
+                - Luxury Design Secrets</p>
+                <!-- <button class="cta-btn">→</button> -->
+            </div>
+    
+            <!-- Design Services Card -->
+            <div class="service-card">
+                <i class="fas fa-building fa-2x"></i>
+                <h3>Design Services</h3>
+                <hr>
+                <p>Complete solutions for:<br>
+                - Residential Spaces<br>
+                - Commercial Establishments<br>
+                Available in:<br>
+                Surat | Ahmedabad | Mumbai<br>
+                End-to-end Project Execution</p>
+                <!-- <button class="cta-btn">→</button> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="home-b">
+        <h1 class="text-center py-1">About Us</h1>
+
+        <div class="features-container py-3 text-center" style="display:flex;justify-content:center;align-items:center;" >
+            <div>
+                <i class='fas fa-home fa-2x'></i>
+                <h3> 100+</h3>
+                <h3>Completed projects</h3>
+            </div>
+            <div>
+                <i class='fas fa-clock fa-2x'></i>
+                <h3>15+</h3>
+                <h3>years of industry experience</h3>
+            </div>
+            <div>
+                <i class='fas fa-user-friends fa-2x'></i>
+                <h3>10,000+</h3>
+                <h3>Coached students</h3>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="home-c" class="text-center py-3">
+        <h1>Some of our global honors</h1>
+        <div class="container award-grid">
+            <div>
+                <i class='fas fa-award fa-2x'></i>
+                <h3>In 2020</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
+                    exercitationem quas ipsum architecto cupiditate id?</p>
+            </div>
+            <div>
+                <i class='fas fa-award fa-2x'></i>
+                <h3>In 2019</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
+                    exercitationem quas ipsum architecto cupiditate id?</p>
+            </div>
+            <div>
+                <i class='fas fa-award fa-2x'></i>
+                <h3>In 2018</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
+                    exercitationem quas ipsum architecto cupiditate id?</p>
+            </div>
+        </div>
+    </section> -->
+    <section id="home-d">
+        <div class="word-content text-center">
+            <h3 class="text-center"> Are you ready to create awesome interiors with Iconic Interiors? Let's connect</h3>
+            <!-- <a href="project.html" class="btn btn-dark my-1">Let's Start</a> -->
+        </div>
+    </section>
+    <!-- <footer id="main-footer">
+        <div class="container text-center">
+
+            <div style="display:flex;justify-content: space-between;color:white;font-size:13px" >
+
+                <code>Phone Number: +91 9429513446</code>
+                <code>Email:  iconicinteriors.surat@gmail.com</code>
+                <code>Location: Denstar, 3rd Floor, Central Bazzar Veneziano, Vesu, Surat,
+                    Gujarat</code>
+
+            </div>
+
+            <ul>
+                <li>
+                    AllRight Reseved &copy; 2025
+                </li>
+                <li>
+                    Design By Shivam Yadav
+                </li>
+            </ul>
+        </div>
+    </footer> -->
+   
+    <footer id="main-footer">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p>Phone Number</p>
+                        <a href="tel:+919429513446">+91 9429513446</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>Email</p>
+                        <a href="mailto:iconicinteriors.surat@gmail.com">iconicinteriors.surat@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>Location</p>
+                        <address>Denstar, 3rd Floor, Central Bazzar Veneziano,<br>Vesu, Surat, Gujarat</address>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-section copyright">
+                <p>&copy; 2025 Iconic Interiors. All Rights Reserved</p>
+                <p class="design-credit">Designed by Shivam Yadav</p>
+            </div>
+        </div>
+    </footer>
+   <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          if (window.location.hash) {
+            history.replaceState(null, document.title, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
+</body>
+
+</html>
